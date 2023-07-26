@@ -1,13 +1,11 @@
-
 import React from 'react';
 import '../App.css';
 
 export default function StudentList() {
-  const names = ['zhraa', 'mary', 'mayes'];
+  const students = ['zhraa', 'amal'];
+  const names = ['zhraa', 'mary', 'mayes', 'amal'];
 
-  const callStudents = (student) => {
-    alert(`${student} is here`);
-  };
+  const isPresent = (student) => students.includes(student);
 
   return (
     <div className="list">
@@ -15,8 +13,8 @@ export default function StudentList() {
       <div>
         <ol>
           {names.map((name) => (
-            <li key={name} >
-              {name} <button className='btn' onClick={() => callStudents(name)}>Call student</button>
+            <li key={name} className={isPresent(name) ? 'present' : 'apsent'}>
+              {name}
             </li>
           ))}
         </ol>
@@ -24,7 +22,3 @@ export default function StudentList() {
     </div>
   );
 }
-
-
-
- 

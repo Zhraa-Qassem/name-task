@@ -1,9 +1,9 @@
 body {
-  background-color: rgb(206, 223, 223);
+  background-color: rgb(94, 124, 106);
   font-size: 20px;
 }
 .app{
-background-color: rgb(149, 194, 149);
+background-color: rgb(218, 227, 231);
 border-radius: 20px;
 width: 600px;
 margin: 30px;
@@ -12,6 +12,12 @@ padding: 20px;
 .btn {
   border-radius: 20px;
   font-size: 15px;
+}
+.present{
+  color: rgb(26, 173, 26);
+}
+.apsent{
+  color: red;
 }
 
 
